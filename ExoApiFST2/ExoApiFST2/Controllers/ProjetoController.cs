@@ -1,5 +1,6 @@
 ﻿using ExoApiFST2.Models;
 using ExoApiFST2.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,8 @@ namespace ExoApiFST2.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    
+    [Authorize]
     public class ProjetoController : ControllerBase
     {
         private readonly ProjetoRepository _projetoRepository;
@@ -70,6 +73,7 @@ namespace ExoApiFST2.Controllers
             }
         }
 
+        [Authorize(Roles = "1")]
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {
@@ -77,7 +81,7 @@ namespace ExoApiFST2.Controllers
             {
                 _projetoRepository.Deletar(id);
 
-                return Ok("Livro Removido com Sucesso!");
+                return Ok("Projeto Removido com Sucesso!");
             }
             catch (Exception e)
             {

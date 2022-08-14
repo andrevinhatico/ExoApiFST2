@@ -24,6 +24,7 @@ namespace ExoApiFST2.Contexts
         }
         // dbset representa as entidades que serão utilizadas nas operações de leitura, criação, atualização e deleção
         public DbSet<Projeto> Projetos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
     }
 }

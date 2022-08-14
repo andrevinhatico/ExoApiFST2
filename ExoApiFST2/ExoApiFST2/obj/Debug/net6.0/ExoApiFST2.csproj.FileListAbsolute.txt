@@ -57,3 +57,4 @@ C:\www\ExoApiFST2\ExoApiFST2\ExoApiFST2\obj\Debug\net6.0\refint\ExoApiFST2.dll
 C:\www\ExoApiFST2\ExoApiFST2\ExoApiFST2\obj\Debug\net6.0\ExoApiFST2.pdb
 C:\www\ExoApiFST2\ExoApiFST2\ExoApiFST2\obj\Debug\net6.0\ExoApiFST2.genruntimeconfig.cache
 C:\www\ExoApiFST2\ExoApiFST2\ExoApiFST2\obj\Debug\net6.0\ref\ExoApiFST2.dll
+C:\www\ExoApiFST2\ExoApiFST2\ExoApiFST2\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
